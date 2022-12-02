@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anequim</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <section class="container cabecalho">
+            <div class="container__cabecalho">
+                <img src="img/logo.png" class="logo">
+                <nav class="container__menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#quem">Quem Somos?</a></li>
+                        <li><a href="#solucao">Soluções</a></li>
+                        <li><a href="#contato">Fale conosco</a></li>
+                        <li><a href="https://anequim.com.br/revenda/">Área do cliente</a></li>
+                    </ul>
+                </nav>
+            </div>            
+        </section>
+        
+        <section class="container secundario">
+            <div class="container__descricao">
+                <h1 class="descricao__titulo">Quem somos?<a name="quem"></a></h1>
+                <p class="descricao__texto">Somos uma empresa que desde 1997 desenvolve softwares 
+                    seguros e com garantia de usabilidade, tornando o dia a dia dos
+                    nossos usuários ainda mais produtivo!</p>
+            </div>
+            <div class="container__descricao missao">
+                <h2 class="descricao__titulo">Missão</h2>
+                <p class="descricao__texto">“Valorizar o relacionamento com o cliente e 
+                    desenvolver softwares simples com grande potencial tecnológico, 
+                    agregando diferencial competitivo ao seu negócio!”</p>
+            </div>
+        </section>
+
+        <section class="solucao">
+            <h2 class="solucao__titulo">Veja as nossas soluções <a name="solucao"></a></h2>
+        </section>
+
+        <section class="solucoes">
+            <ul class="solucoes__lista">
+                <li class="lista__item">Gerezim</li>
+                <p class="lista__texto">Gerencie o seu negócio de qualquer lugar a qualquer hora! 
+                    Funções como controle de estoque, vendas e financeiro, gerenciamento de
+                     custo de produtos e serviços, pode ser feito de forma simples e fácil, na 
+                     palma da sua mão, através do Gerezim!</p>
+                <img src="img/gerezim2.png" alt="tela do Gerezim disponível no celular e tablet" class="lista__img">
+                
+                <li class="lista__item">Anequim</li>
+                <p class="lista__texto">Solução para a realização de vendas!
+                    O programa anequim é de fácil utilização!
+                    Instale e então é só vender, aproveite e controle suas vendas através do Gerezim!                    
+                    Através do software emita também NFC-e ou SAT</p>
+                <img src="img/restaurante1.png" alt="tela do Anequim" class="lista__img">
+
+                <li class="lista__item">NF-e</li>
+                <p class="lista__texto">Emita seu documento fiscal eletrônico com nosso software, envie diretamente para 
+                    o e-mail do seu cliente ou fornecedor, de forma rápida e fácil diretamente no nosso site!
+                    Nunca foi tão fácil emitir NF-e!</p>
+                <img src="img/nfe.png" alt="tela do Gerezim disponível no celular e tablet" class="lista__img">
+                
+                <li class="lista__item">Gerezim RH</li>
+                <p class="lista__texto">Software completo para gestão de empresas de refeição coletiva!
+                    O Gerezim RH está preparado para integração com RH, efetue o controle de refeições
+                    para colaboradores e terceiros, visualize relatórios!
+                    Solução rápida para implantação de regras de consumo, registros através de terminal, 
+                    catraca ou biometria!</p>
+                <img src="img/rh.png" alt="tela do Gerezim disponível no celular e tablet" class="lista__img">
+            </ul>
+        </section>
+
+        <main>
+			<section class="contato"> <a name="contato"></a>
+				<form>
+					<label for="nomesobrenome">Nome e Sobrenome</label>
+					<input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Digite seu nome">
+
+					<label for="email">E-mail</label>
+					<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+					<label for="telefone">Telefone</label>
+					<input type="tel" id="telefone" class="input-padrao" required placeholder="(xx)xxxxx-xxxx">
+
+					<label for="mensagem">Mensagem</label>
+					<textarea cols="60" rows="10" id="mensagem" class="input-padrao" required></textarea>
+					<input type="submit" value="Enviar Formulário" class="enviar">
+				</form>
+
+				<div class="horario">
+					<h2>Horário de atendimento: </h2>
+					<ul class="lista_horarios">
+						<li>Segunda-feira de 09:00h às 18:00h</li>
+						<li>Terça-feira de 09:00h às 18:00h</li>
+						<li>Quarta-feira de 09:00h às 18:00h</li>
+						<li>Quinta-feira de 09:00h às 18:00h</li>
+						<li>Sexta-feira de 09:00h às 18:00h</li>
+						<li class="dia_naoutil"> *Exceto feriados.</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<img src="img/logo.png" class="logo__footer">
+			<h1 class="copyright">&copy; Copyright S&T Sistemas e Tecnologia do Brasil</h1>
+            <p>®STBR - S&T Sistemas e Tecnologia do Brasil. XX.xXx.xxx/xxXX-xx</p>
+            
+		</footer>
+
+    </body>
+</html>

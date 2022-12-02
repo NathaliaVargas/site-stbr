@@ -1,0 +1,320 @@
+:root {
+    --branco-principal: #F9F8F8;
+    --azul-principal: #000020;
+    --azul-secundario: #26517C;
+    --botao-verde: #58A72A;
+    --cor-de-fundo: #00030C;  
+    --fonte-principal: 'Inter'; 
+}
+
+body {
+    background-color: var(--azul-principal);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    background-image: url(img/background2.png);
+    background-repeat: no-repeat;
+    background-size: contain ;
+}
+
+.logo{
+	position: static;
+	width: 60px;
+	height: 60px;
+	margin: 10px 0 10px auto;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+nav {
+	position: absolute;
+	top: 30px;
+	right: 10px;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 10px;
+}
+
+nav a {
+	color: var(--branco-principal);
+	font-weight: lighter;
+	font-size: 18px;
+	text-decoration: none;
+
+}
+
+nav a:hover {
+	color: var(--branco-principal);
+	text-decoration: underline;
+}
+
+.descricao__titulo {
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    margin: 1em;
+    text-align: center;
+    font-size: 21px;
+
+}
+
+.container__descricao {
+    padding: 1em;
+    text-align: center;
+    align-items: center;
+}
+
+.secundario {
+    text-align: center;
+    display: flex;
+}
+
+.missao {
+    text-align: center;
+    align-items: center;
+    top: 50%;                 
+    transform: translate(0, 25%);
+}
+
+.solucao__titulo {
+    align-items: center;
+    text-align: center;
+    font-size: 36px;
+    text-decoration: underline;
+    font-family: var(--fonte-principal);
+}
+
+.lista__item {
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 30px;
+    list-style: none;
+    margin: 2em 0 0 0.5em;
+    padding: 10px;
+}
+
+.lista__texto {
+    font-size: 21px;
+    padding: 1em;
+    margin: 0 40em 0 0;
+}
+
+.lista__img {
+    margin: -11em 0 0 50em;
+    align-items: center;
+    border: 0.5em outset var(--azul-secundario);
+}
+
+.lista__img:hover{
+    border: 0.8em outset var(--azul-secundario);
+}
+
+/*Formulario de Contato*/
+
+
+form {
+	background: darkorange;
+	margin: 30px 180px 10px;
+	width: 30%;
+	border-radius: 5px;
+	padding: 30px 30px;
+	
+}
+
+form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 0;
+	text-align: center;
+	color: var(--branco-principal);
+}
+
+.input-padrao {
+	text-align: center;
+	display: block;
+	margin: 0 0 10px;
+	padding: 10px 20px;
+	width: 80%;
+	margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border-color: var(--branco-principal);
+    
+}
+
+.enviar {
+	width: 45%;
+	padding: 4px;
+	margin: 10px 50% auto;
+	background: var(--botao-verde);
+	color: var(--branco-principal);
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s;
+	cursor: pointer;
+}
+
+.enviar:hover {
+    background: darkgreen ;
+}
+
+.contato {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 2em 30px;
+}
+
+.horario {
+	font-size: 20px;
+	text-align: center;
+    padding: 2px;
+	line-height: 30px;
+	color: var(--branco-principal);
+
+}
+
+.horario h2 {
+	font-size: 25px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.lista_horarios {
+    list-style: none;
+}
+
+.dia_naoutil {
+	font-size: 18px;
+	color: var(--branco-principal);
+}
+
+/*Footer*/
+
+
+footer{
+	text-align: center;
+	background: var(--azul-principal);
+	padding: 10px 0;
+}
+
+.copyright {
+	color: var(--branco-principal);
+	font-size: 13px;
+	margin-top: 20px 0 0;
+}
+
+@media screen and (max-width:400px) {
+    
+
+    .container {
+        height: 50vh;
+        display: block;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+    }
+    .container__menu {
+        align-items: center;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .logo {
+        margin: 0 0 0 10em;
+    }
+
+    nav li {
+        display: inline-block;
+        padding: 2em 0 0 0;
+        margin: 0 0 0 1em;
+        font-size: 16px;
+    }
+
+    nav a {
+        text-shadow: 1px 1px 1px var(--azul-principal);       
+    
+    }
+
+    .cabecalho {
+        background-size: cover;
+    }
+
+    .solucao {
+        margin: 6em 0 0 0;
+        padding: 1em 0 0 0;
+    }
+
+    .solucao__titulo {
+        margin: 8em 0 0 0;
+        font-size: 20px;
+    }
+
+    .solucoes__lista {
+        align-items: center;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .lista__item {
+        font-size: 20px;
+    }
+    
+    .lista__texto {
+        font-size: 16px;
+        padding: 1em;
+        margin: 0 1em 0 1em;
+        font-size: 16px;
+    }
+
+    .lista__img {
+        margin: 0;
+        width: 200px;
+        align-items: center;
+    }
+
+    .contato {
+        display: inline-block;
+        margin: 0 0 0 -8em;
+    }
+
+    .enviar {
+            width: 100%;
+            margin: 0;
+    }
+
+    .lista_horarios{
+        padding: 0 0 0 1em;
+        font-size: 16px;
+    }
+
+    .horario {
+        text-align: center;
+        align-items: center;
+    }
+
+    footer {
+        align-items: center;
+    }
+}
